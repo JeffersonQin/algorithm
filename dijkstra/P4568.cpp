@@ -51,7 +51,7 @@ void dijkstra() {
 		vis[u] = 1;
 		for (int e = head[u]; e; e = g[e].next) {
 			int v = g[e].to;
-            if (vis[v]) continue;
+			if (vis[v]) continue;
 			if (dis[v] > dis[u] + g[e].w) {
 				dis[v] = dis[u] + g[e].w;
 				q.push(node { v, dis[v] });
